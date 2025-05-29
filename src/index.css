@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #E65100;
+  --primary-light: #FF9800;
+  --primary-dark: #BF360C;
+  --secondary-color: #2E7D32;
+  --secondary-light: #4CAF50;
+  --secondary-dark: #1B5E20;
+  --accent-color: #FFC107;
+  --text-dark: #333333;
+  --text-light: #666666;
+  --background-light: #FFF8E1;
+  --background-dark: #FFECB3;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold text-center my-8 text-amber-800;
+  font-family: 'Playfair Display', serif;
+}
+
+.btn-primary {
+  @apply bg-amber-600 hover:bg-amber-700 text-white font-medium py-2 px-4 rounded-md transition-all duration-300 transform hover:scale-105;
+}
+
+.btn-secondary {
+  @apply bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-md transition-all duration-300 transform hover:scale-105;
+}
+
+.btn-accent {
+  @apply bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-4 rounded-md transition-all duration-300 transform hover:scale-105;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
