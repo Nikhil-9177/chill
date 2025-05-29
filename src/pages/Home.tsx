@@ -36,7 +36,7 @@ const Home = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 bg-amber-50">
+      {/* <section className="py-16 bg-amber-50">
         <div className="container mx-auto px-4">
           <h2 className="section-title">What Our Customers Say</h2>
           
@@ -58,7 +58,7 @@ const Home = () => {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-16 bg-amber-800 text-white">
